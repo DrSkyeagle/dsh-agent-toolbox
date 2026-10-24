@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agent Toolbox",
+    "description": "Composer-side toolbox for DSH. Manually curate and add Skills and Prompts from WorkBuddy, Claude Code, Codex, Cursor and Gemini — no auto-injection, so your DSH context stays clean."
+  }
+}

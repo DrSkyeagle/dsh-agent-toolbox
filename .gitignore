@@ -1,0 +1,7 @@
+*.tgz
+*.tar.gz
+node_modules/
+.npmrc
+npm-debug.log*
+*.log
+.DS_Store

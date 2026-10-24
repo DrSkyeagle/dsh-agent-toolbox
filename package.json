@@ -1,0 +1,64 @@
+{
+  "name": "dsh-agent-toolbox",
+  "version": "1.0.0",
+  "description": "DSH web plugin: a composer-side toolbox that lets you manually curate and add Skills and Prompts from WorkBuddy, Claude Code, Codex, Cursor and Gemini — no auto-injection, so your DSH context stays clean.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "test",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "locale",
+    "icon.svg"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs",
+    "pack": "npm pack"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "agent",
+    "skills",
+    "prompts",
+    "toolbox",
+    "claude-code",
+    "codex",
+    "cursor",
+    "gemini",
+    "workbuddy"
+  ],
+  "author": "DrSkyeagle",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrSkyeagle/dsh-agent-toolbox.git"
+  },
+  "homepage": "https://github.com/DrSkyeagle/dsh-agent-toolbox#readme",
+  "bugs": {
+    "url": "https://github.com/DrSkyeagle/dsh-agent-toolbox/issues"
+  },
+  "license": "MIT"
+}

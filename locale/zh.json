@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "WorkBuddy 工具箱",
+    "description": "DSH 会话输入框旁的工具箱。人工添加并管理 WorkBuddy / Claude Code / Codex / Cursor / Gemini 的 Skill 与常用 Prompt——按需配置、不自动注入，保留 DSH 最干净的上下文。"
+  }
+}
